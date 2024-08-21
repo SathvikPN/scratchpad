@@ -1,3 +1,5 @@
+Bash-scripting learner repo: https://github.com/SathvikPN/bash-scripting
+
 Subject: Difference between .bashrc .bash-profile .profile
 
 [Bash Shell]
