@@ -1,0 +1,13 @@
+[user]
+	name = <NAME>
+	email = <EMAIL>
+
+[url "https://x-oauth-basic:<PERSONAL_ACCESS_TOKEN>@github.com/"]
+	insteadof = https://github.com 
+
+[core]
+	editor = vim 
+
+[alias]
+	olog = log --oneline
+	applyadjust = apply --reject --whitespace=fix
