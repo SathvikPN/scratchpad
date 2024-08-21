@@ -1,0 +1,30 @@
+WORK_IN_PROGRESS...
+
+o : insert mode with newline below (O for above)
+A : insert mode after EOL char (I for beginnning)
+a : insert mode with append
+ZZ : write and exit
+ZQ : just exit
+x : delete next char (3x delete next 3 chars) 
+dd : delete current line (3dd delete 3lines below including current)
+J : remove line break and join below line to current line
+u : undo last operation
+C-r : redo last undoed operation
+0, $ : start and end of line
+10G : goto line 10 beginning(G EOF, gg beginnning of file)
+% : goto matching parenthesis open or closing alternatively
+
+SCROLLING -------------
+H,M,L : current visible window (H top M middle L lowest line)
+C-U, C-D : scroll up(half window) D (downhalf window) 
+C-F, C-B : scroll forwardpage backwardpage (C-E C-Y for linewise) 
+zz : bring context to cursor at middle of screen
+
+
+SEARCHING --------------
+/ : search forwards (enter to execute, n to next occurence N to previous occurence)
+* : search current cursor word
+
+JUMPING -------------------
+10G : move to 10th line beginning
+`` : move to original pos before jumped with G cmd (read marks concept in vim)
