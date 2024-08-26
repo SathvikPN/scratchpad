@@ -28,3 +28,134 @@ SEARCHING --------------
 JUMPING -------------------
 10G : move to 10th line beginning
 `` : move to original pos before jumped with G cmd (read marks concept in vim)
+
+
+
+STRUCTURED ---------------------------------------------------------------------
+
+# VIM KEYBOARD SHORTCUTS
+
+## MOVEMENT
+
+h       - Move left
+j       - Move down
+k       - Move up
+l       - Move right
+$       - Move to end of line
+0       - Move to beginning of line (including whitespace)
+^       - Move to first character on line
+gg      - Move to first line of file
+G       - Move to last line of file
+w       - Move forward to next word (first character)
+W       - Move forward to next word (whitespace only)
+b       - Move backward to previous word (first character)
+B       - Move backward to previous word (whitespace only)
+e       - Move forward to next word (last character)
+E       - Move forward to next word (whitespace only)
+ge      - Move backward to previous word (last character)
+gE      - Move backward to previous word (whitespace only)
+(       - Move to beginning of previous sentence
+)       - Move to beginning of next sentence
+{       - Move to beginning of previous paragraph
+}       - Move to beginning of next paragraph
++       - Move to first character on the next line
+-       - Move to first character on the previous line
+CTRL+u - Move up by half a page
+CTRL+d - Move down by half a page
+CTRL+b - Move up by a page
+CTRL+f - Move down by a page
+H       - Move cursor to header (top) line of current visible window
+M       - Move cursor to middle line of current visible window
+L       - Move cursor to last line of current visible window
+fc      - Move cursor to next occurrence of character c on the current line
+Fc      - Move cursor to previous occurrence of character c on the current line
+%       - Move cursor to matching brace, bracket, or comment
+*       - Search forward for word under cursor
+#       - Search backward for word under cursor
+/word   - Search forward for word (regex supported)
+?word   - Search backward for word (regex supported)
+n       - Repeat last search command
+N       - Repeat last search command in the opposite direction
+
+## INSERTION
+
+i       - Enter insert mode before the cursor
+I       - Enter insert mode at the beginning of the line
+a       - Enter insert mode after the cursor
+A       - Enter insert mode at the end of the line
+o       - Open a new line below the current line
+O       - Open a new line above the current line
+ESC     - Exit insert mode
+
+## VISUAL MODE
+
+v       - Enter visual mode and highlight characters
+V       - Enter visual mode and highlight entire lines
+CTRL+v  - Enter visual block mode
+
+## EDITING
+
+u       - Undo last change
+CTRL+r  - Redo last undone change
+.       - Repeat last change
+x       - Delete character under the cursor
+dd      - Delete current line
+yy      - Copy (yank) current line
+p       - Paste after the cursor
+P       - Paste before the cursor
+c       - Change (delete and enter insert mode)
+s       - Substitute (delete character and enter insert mode)
+S       - Substitute (delete entire line and enter insert mode)
+
+## MISCELLANEOUS
+
+CTRL+a  - Increment the number at the cursor
+CTRL+x  - Decrement the number at the cursor
+g~      - Switch case of the character under the cursor
+gUU     - Change the current line to uppercase
+guu     - Change the current line to lowercase
+CTRL+g  - Show the current file name and position
+
+## COMMAND LINE
+
+:q      - Quit Vim
+:w      - Save file
+:wq     - Save and quit
+:q!     - Quit without saving
+:help   - Open help documentation
+:!      - Execute shell command
+
+## HISTORY/COMMAND BUFFER
+
+q:      - List command history
+q/      - Search command history
+CTRL+c CTRL+c - Close command buffer
+:set list - Show hidden characters
+
+## FOLDING
+
+zf      - Create a fold
+zd      - Delete a fold
+za      - Toggle fold under the cursor
+zo      - Open a fold
+zc      - Close a fold
+
+## TABS AND WINDOWS
+
+:tabnew - Open a new tab
+:tabn   - Go to next tab
+:tabp   - Go to previous tab
+:tabc   - Close current tab
+CTRL+w s - Split window horizontally
+CTRL+w v - Split window vertically
+CTRL+w c - Close current window
+CTRL+w h - Move to the left window
+CTRL+w j - Move to the window below
+CTRL+w k - Move to the window above
+CTRL+w l - Move to the right window
+
+## PLUGINS (for parentheses autocomplete)
+
+" Add to your .vimrc for parentheses auto-completion
+let g:delimitMate_expand_cr = 1
+
